@@ -176,8 +176,9 @@ input, select, textarea {
 	}
 
 	p {
-		text-align: justify;
 		margin: 0 0 2rem 0;
+		line-height: 35px;
+		font-size: 19px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -208,8 +209,9 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.25rem;
+		font-size:30px;
 		margin: 0 0 1.5rem 0;
+		text-align: left;
 	}
 
 	h4 {
@@ -3283,9 +3285,10 @@ input, select, textarea {
 
 /* Intro */
 
+
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
+		padding: 0 0 15rem 0;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
