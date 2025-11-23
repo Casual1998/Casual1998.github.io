@@ -1,12 +1,11 @@
 body{
-    background-color: burlywood;
+    background: linear-gradient(to bottom, rgb(223, 32, 43), blue);
     height: 100vh; /* altura total da janela */
     display: flex;
     justify-content: center; /* centra horizontalmente */
     align-items: center;     /* centra verticalmente */
 }
 .caixaPrincipal{
-    background-color: brown;
     width: 100%;
     height: 50%;
     display: flex;
@@ -19,17 +18,45 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
     width: 50%;
     height: 100%;
+    padding-right: 5%;
 }
 
-.caixaDireita {
+.caixaEsquerdaEsquerda {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    width: 50%;
+
+    width: 25%;
+    height: 100%;
+}
+.caixaEsquerdaDireita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 75%;
     height: 100%;
 }
 
+
+
+.caixaDireita {
+    display: flex;
+    flex-direction: column; /* para o texto quebrar normalmente */
+    
+    justify-content: center;  /* centro vertical */
+    align-items: flex-start;  /* puxa para a esquerda */
+
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    margin-right: 5%;
+}
+
+.conteudo {
+    padding: 10%;             /* padding só do texto */
+    max-width: 80%;            /* limite opcional */
+    text-align: left;          /* texto alinhado à esquerda */
+}
