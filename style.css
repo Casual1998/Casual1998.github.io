@@ -1,5 +1,16 @@
 body{
-    background: linear-gradient(to bottom, rgb(223, 32, 43), blue);
+    
+
+
+    /*background-image: url('casa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;   
+    */
+    background: #0d0d0d;   /* preto elegante, não completamente puro *//* opcional – fica atrás da imagem */
+
+    
+    
     height: 100vh; /* altura total da janela */
     display: flex;
     justify-content: center; /* centra horizontalmente */
@@ -35,9 +46,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    
     width: 75%;
     height: 100%;
+
+    background-image: url('perfil.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;  
+
 }
 
 
@@ -49,10 +66,14 @@ body{
     justify-content: center;  /* centro vertical */
     align-items: flex-start;  /* puxa para a esquerda */
 
-    background-color: white;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(6px);/* opcional – efeito vidro fosco */
+
     width: 50%;
     height: 100%;
     margin-right: 5%;
+
+
 }
 
 .conteudo {
