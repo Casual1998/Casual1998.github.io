@@ -1,83 +1,53 @@
+html, body {
+    height: 100%;
+
+}
+
+
 body{
-    
-
-
     /*background-image: url('casa.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;   
     */
-    background: #0d0d0d;   /* preto elegante, não completamente puro *//* opcional – fica atrás da imagem */
-
-    
-    
-    height: 100vh; /* altura total da janela */
+    background: #0d0d0d;
     display: flex;
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;     /* centra verticalmente */
+    justify-content: center;
+    align-items: center;
+
+    width: 100%; /* ou outro valor, para não ocupar toda a tela */
 }
 .caixaPrincipal{
-    width: 100%;
-    height: 50%;
     display: flex;
-
+    justify-content: space-between; /* coloca esquerda e direita nas extremidades */
+    width: 100%;
+    padding: 10%;
 }
 
+.caixaDireita{
+    background-color: white;
+}
 
 
 .caixaEsquerda {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    padding-right: 5%;
+    background-color: wheat;
 }
 
-.caixaEsquerdaEsquerda {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 600px) {
+    body {
+        justify-content: flex-start; /* não centra horizontalmente */
+        align-items: flex-start;     /* não centra verticalmente */
+    }
+    .caixaPrincipal{
+        flex-direction: column;
+        width: 90%;  
+        
+    }
 
-    width: 25%;
-    height: 100%;
-}
-.caixaEsquerdaDireita {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .caixaEsquerda{
+        margin-bottom: 5%;
+    }
     
-    width: 75%;
-    height: 100%;
-
-    background-image: url('perfil.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;  
-
 }
 
 
-
-.caixaDireita {
-    display: flex;
-    flex-direction: column; /* para o texto quebrar normalmente */
-    
-    justify-content: center;  /* centro vertical */
-    align-items: flex-start;  /* puxa para a esquerda */
-
-    background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(6px);/* opcional – efeito vidro fosco */
-
-    width: 50%;
-    height: 100%;
-    margin-right: 5%;
-
-
-}
-
-.conteudo {
-    padding: 10%;             /* padding só do texto */
-    max-width: 80%;            /* limite opcional */
-    text-align: left;          /* texto alinhado à esquerda */
-}
