@@ -1,0 +1,7 @@
+.logo {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #5D3A00; /* marrom escuro, contraste com wheat */
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sutil efeito de profundidade */
+}

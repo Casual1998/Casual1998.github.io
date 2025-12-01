@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+
+    body {
+        height: auto; /* deixa crescer conforme o conteúdo */
+    }
+
+    .caixaPrincipal {
+        flex-direction: column; /* empilha */
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .caixaEsquerda,
+    .caixaDireita {
+        width: 100%;
+        height: auto;     /* remove alturas forçadas */
+        margin: 0;
+        padding: 20px 0;  /* espaço interno para ficar bonito */
+    }
+
+    .caixaEsquerda {
+        padding-right: 0; /* remove padding lateral */
+    }
+
+    .caixaDireita {
+        margin-top: 10px; /* espaço entre as caixas */
+    }
+
+    .conteudo {
+        padding: 20px;  
+        max-width: 100%;
+    }
+}
