@@ -18,12 +18,15 @@ body {
 .container {
   width: 100%;
   max-width: 1600px;
-  padding: 23px;
+
 
   display: flex;
   flex-wrap: wrap;         /* permite quebrar linha */
   justify-content: center; /* centra horizontalmente */
-  gap: 23px;               /* espaço entre as bolas */
+  gap: 30px;               /* espaço entre as bolas */
+
+  padding-bottom: 5%;
+
 }
 
 /* ---------------- CARD (BOLA) ---------------- */
@@ -39,6 +42,9 @@ body {
   background: white;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(0, 10, 20, 0.1);
+
+  
+
 }
 
 /* Imagem ocupa metade da bola */

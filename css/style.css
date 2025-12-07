@@ -1,6 +1,7 @@
 
 .caixaPrincipal{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; /* coloca esquerda e direita nas extremidades */
     width: 100%;
     padding: 10%;
@@ -36,7 +37,7 @@
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     body {
         justify-content: flex-start; /* não centra horizontalmente */
         align-items: center;     /* não centra verticalmente */
@@ -53,11 +54,16 @@
         margin-bottom: 5%;
         width: 250px;
         height: 250px;
+        padding: auto;
+        font-size: clamp(0.80rem, 1.8vw, 0.85rem);
+
     }
     .caixaDireita{
         margin-bottom: 5%;
-        width: 250px;
-        height: 250px;
+        width: 260px;
+        height: 260px;
+        padding: auto;
+        font-size: clamp(0.80rem, 1.8vw, 0.85rem);
     }
     
 }

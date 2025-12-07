@@ -1,7 +1,86 @@
 .logo {
-  font-size: 3rem;
+  font-size: 3rem; /* tamanho fixo normal */
   font-family: 'Montserrat', sans-serif;
-  color: #5D3A00; /* marrom escuro, contraste com wheat */
+  color: #5D3A00;
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sutil efeito de profundidade */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Quando a tela for pequena demais, diminui */
+@media (max-width: 900px) {
+  .logo {
+    font-size: 2.5rem; /* só diminui quando necessário */
+  }
+}
+
+
+.entradas {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #5D3A00;
+  display: block;       /* ocupa largura total */
+  text-align: center;   /* centraliza conteúdo */
+}
+
+
+.entradas span {
+  display: inline-block;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  text-align: center;
+  
+}
+
+.principal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #5D3A00;
+  display: block;       /* ocupa largura total */
+  text-align: center;   /* centraliza conteúdo */
+}
+
+
+.principal span {
+  display: inline-block;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  text-align: center;
+  
+}
+
+.sobremesa {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #5D3A00;
+  display: block;
+  text-align: center;
+}
+
+.sobremesa span {
+  display: inline-block;
+  transition: opacity 0.5s ease;
+}
+
+
+.bebida {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #5D3A00;
+  display: block;       /* <- ESSENCIAL */
+  text-align: center;   /* <- ESSENCIAL */
+}
+
+.bebida span {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-down {
+  opacity: 0;           /* invisível */
+  transform: translateY(20px); /* desce */
 }
