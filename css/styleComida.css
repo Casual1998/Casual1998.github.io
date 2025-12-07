@@ -18,15 +18,11 @@ body {
 .container {
   width: 100%;
   max-width: 1600px;
-
-
   display: flex;
   flex-wrap: wrap;         /* permite quebrar linha */
   justify-content: center; /* centra horizontalmente */
   gap: 30px;               /* espaço entre as bolas */
-
   padding-bottom: 5%;
-
 }
 
 /* ---------------- CARD (BOLA) ---------------- */
@@ -34,10 +30,8 @@ body {
 .card-left {
   display: flex;
   flex-direction: row;
-
   width: 260px;
   height: 260px;
-
   border-radius: 30%;
   background: white;
   overflow: hidden;
@@ -78,7 +72,7 @@ body {
   color: #2c3e50;
   text-align: center;
   width: 100%;
-  font-size: clamp(0.85rem, 1.8vw, 0.8rem);
+  font-size: clamp(0.85rem, 1.8vw, 1.0rem);
   font-weight: 400;
   letter-spacing: -0.01em;
 }

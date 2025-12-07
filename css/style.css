@@ -17,7 +17,7 @@
     flex-direction: column;        /* coloca texto em coluna */
     justify-content: center;       /* centra verticalmente */
     align-items: center;           /* centra horizontalmente */
-    text-align: center;
+    text-align: left;
     padding: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
@@ -36,6 +36,73 @@
     padding: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
+
+.caixaEsquerda img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Faz com que a imagem se ajuste sem distorcer */
+  }
+  
+
+.telefone {
+    color: inherit;
+    text-decoration: none;
+}
+
+.telefone:hover {
+    text-decoration: underline;
+}
+
+.morada {
+    color: inherit;
+    text-decoration: none;
+}
+
+.morada:hover {
+    text-decoration: underline;
+}
+
+
+/* Caixa geral */
+.linguas {
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Botão principal (bandeira + seta) */
+.linguas {
+    position: fixed; /* para manter a posição fixa na tela */
+    right: 20px;     /* alinha o botão à direita da página */
+    top: 20px;       /* ajusta a distância do topo, se necessário */
+    display: inline-block; /* mantém o tamanho correto */
+}
+
+/* Opções de línguas */
+.linguas-opcoes {
+    position: absolute;  /* deixa de empurrar o layout */
+    top: 100%;           /* aparece logo abaixo do botão */
+    left: 0;
+    background: white;   /* para ficar visível */
+    display: none;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    z-index: 999;        /* fica por cima de tudo */
+}
+
+/* Mostrar ao passar o rato */
+.linguas:hover .linguas-opcoes {
+    display: block;
+}
+
+
+
+  
+
+
 
 @media only screen and (max-width: 900px) {
     body {

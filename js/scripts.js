@@ -92,13 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
       letras.forEach((span, index) => {
         setTimeout(() => {
           if (toggle) {
-            span.classList.add("slide-down");  // invisível + desce
+            span.classList.add("slide-down");
           } else {
-            span.classList.remove("slide-down"); // volta ao normal
+            span.classList.remove("slide-down");
           }
-        }, index * 200);
+        }, index * 120);
       });
-  
       toggle = !toggle;
     }
   
@@ -107,4 +106,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   animarBebida();
+  
   
